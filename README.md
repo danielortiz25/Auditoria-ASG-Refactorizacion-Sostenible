@@ -8,7 +8,7 @@ Para medir la huella de carbono he usado esta pagina: [https://www.websitecarbon
 
 Y como podemos ver la pagina esta bastante mal:
 
-https://github.com/danielortiz25/Auditoria-ASG-Refactorizacion-Sostenible/blob/main/img/Captura%20de%20pantalla%202026-05-13%20133206.png
+![Texto descriptivo](/img/Captura%20de%20pantalla%202026-05-13%20133206.png)
 
 2. **Identificación de *Bloatware***. 
 
