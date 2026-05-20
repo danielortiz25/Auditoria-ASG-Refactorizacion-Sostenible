@@ -14,13 +14,13 @@ Para medir la huella de carbono he usado esta pagina: [https://www.websitecarbon
 
 Y como podemos ver la pagina esta bastante mal:
 
-![](/img/Captura%20de%20pantalla%202026-05-13%20133206.png)
+![](/img/cap1.png)
 
 2. **Identificación de *Bloatware***. 
 
 Como podemos ver en la imagen la página está bastante “sucia”
 
-![](/img/Captura%20de%20pantalla%202026-05-13%20134404.png)
+![](/img/cap2.png)
 
 Los principales recursos mas pesados son .jpg (imagenes).
 
@@ -51,3 +51,5 @@ El resultado general refleja una accesibilidad moderada, con margen de mejora en
 | Estructura | 25 | Se detecta una jerarquía básica, aunque con encabezados desordenados. |
 | Elementos ARIA | 222 | Uso elevado de atributos ARIA, algunos redundantes o innecesarios. |
 | AIM Score | 7.4 / 10 | Nivel de accesibilidad aceptable, pero no óptimo para cumplir WCAG 2.2 AA. |
+
+![](/img/cap3.png)
