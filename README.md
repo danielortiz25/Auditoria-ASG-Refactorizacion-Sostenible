@@ -59,3 +59,13 @@ El resultado general refleja una accesibilidad moderada, con margen de mejora en
 2. **Identificación de barreras**
 
 El análisis realizado con WAVE revela varias barreras que afectan a la accesibilidad de la página. La primera es la ausencia de atributos ALT en imágenes importantes, lo que impide que los lectores de pantalla describan el contenido visual a usuarios con discapacidad visual. También se detectan problemas de contraste en algunos textos y botones, especialmente cuando aparecen sobre fondos claros, dificultando la lectura para personas con baja visión.
+
+## Fase 3: Dimensión de Gobernanza y Ética (G)
+
+1. **Transparencia**
+
+
+
+2. **Datos innecesarios**
+
+
