@@ -14,7 +14,7 @@ Y como podemos ver la pagina esta bastante mal:
 
 Como podemos ver en la imagen la página está bastante “sucia”
 
-![Texto descriptivo](/img/Captura%de%pantalla%2026-05-13%134404.png)
+![Texto descriptivo](/img/Captura%20de%20pantalla%202026-05-13%20134404.png)
 
 Los principales recursos mas pesados son .jpg (imagenes).
 
