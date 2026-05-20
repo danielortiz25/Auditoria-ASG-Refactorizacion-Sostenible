@@ -2,7 +2,7 @@
 
 ## INTRODUCCIÓN 
 
-Refactorización del código de la pagina web 
+Refactorización del código de la página web 
 
 [https://www.arengalia.es/tabernas/taberna-porvenir](https://www.arengalia.es/tabernas/taberna-porvenir)
 
@@ -26,3 +26,14 @@ Los principales recursos mas pesados son .jpg (imagenes).
 
 3. **Análisis**. ¿Crees que la web sufre de "inflación de software"? Justifica tu respuesta.
 
+Sí. La web presenta inflación de software porque:
+
+- Carga imágenes muy pesadas sin compresión moderna.
+
+- Descarga scripts externos innecesarios en el primer render.
+
+- No usa lazy loading, lo que dispara el consumo energético.
+
+- El peso total supera 1 MB, límite recomendado para webs sostenibles.
+
+## Fase 2: Dimensión Social y Equidad (S)
