@@ -1,5 +1,11 @@
 # Auditoria-ASG-Refactorizacion-Sostenible
 
+## INTRODUCCIÓN 
+
+Refactorización del código de la pagina web 
+
+https://www.arengalia.es/tabernas/taberna-porvenir
+
 ## Fase 1: Inventario y Dimensión Ambiental (A)
 
 1. **Medición inicial**. 
