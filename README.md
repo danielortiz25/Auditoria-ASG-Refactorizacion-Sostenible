@@ -24,7 +24,7 @@ Como podemos ver en la imagen la página está bastante “sucia”
 
 Los principales recursos mas pesados son .jpg (imagenes).
 
-3. **Análisis**. ¿Crees que la web sufre de "inflación de software"? Justifica tu respuesta.
+3. **Análisis**. 
 
 Sí. La web presenta inflación de software porque:
 
@@ -37,6 +37,8 @@ Sí. La web presenta inflación de software porque:
 - El peso total supera 1 MB, límite recomendado para webs sostenibles.
 
 ## Fase 2: Dimensión Social y Equidad (S)
+
+1.**Test de Accesibilidad.**
 
 Se ha realizado un análisis de accesibilidad sobre la página [https://www.arengalia.es/tabernas/taberna-porvenir](https://www.arengalia.es/tabernas/taberna-porvenir) utilizando la herramienta WAVE Web Accessibility Evaluation Tool.
 
@@ -53,3 +55,7 @@ El resultado general refleja una accesibilidad moderada, con margen de mejora en
 | AIM Score | 7.4 / 10 | Nivel de accesibilidad aceptable, pero no óptimo para cumplir WCAG 2.2 AA. |
 
 ![](/img/cap3.png)
+
+2. **Identificación de barreras**
+
+El análisis realizado con WAVE revela varias barreras que afectan a la accesibilidad de la página. La primera es la ausencia de atributos ALT en imágenes importantes, lo que impide que los lectores de pantalla describan el contenido visual a usuarios con discapacidad visual. También se detectan problemas de contraste en algunos textos y botones, especialmente cuando aparecen sobre fondos claros, dificultando la lectura para personas con baja visión.
