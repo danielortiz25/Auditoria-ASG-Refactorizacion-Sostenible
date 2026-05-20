@@ -14,6 +14,8 @@ Y como podemos ver la pagina esta bastante mal:
 
 Como podemos ver en la imagen la página está bastante “sucia”
 
+![Texto descriptivo](/img/Captura%de%pantalla%2026-05-13%134404.png)
+
 Los principales recursos mas pesados son .jpg (imagenes).
 
 3. **Análisis**. ¿Crees que la web sufre de "inflación de software"? Justifica tu respuesta.
