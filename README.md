@@ -14,13 +14,13 @@ Para medir la huella de carbono he usado esta pagina: [https://www.websitecarbon
 
 Y como podemos ver la pagina esta bastante mal:
 
-![Texto descriptivo](/img/Captura%20de%20pantalla%202026-05-13%20133206.png)
+![](/img/Captura%20de%20pantalla%202026-05-13%20133206.png)
 
 2. **Identificación de *Bloatware***. 
 
 Como podemos ver en la imagen la página está bastante “sucia”
 
-![Texto descriptivo](/img/Captura%20de%20pantalla%202026-05-13%20134404.png)
+![](/img/Captura%20de%20pantalla%202026-05-13%20134404.png)
 
 Los principales recursos mas pesados son .jpg (imagenes).
 
@@ -37,3 +37,17 @@ Sí. La web presenta inflación de software porque:
 - El peso total supera 1 MB, límite recomendado para webs sostenibles.
 
 ## Fase 2: Dimensión Social y Equidad (S)
+
+Se ha realizado un análisis de accesibilidad sobre la página [https://www.arengalia.es/tabernas/taberna-porvenir](https://www.arengalia.es/tabernas/taberna-porvenir) utilizando la herramienta WAVE Web Accessibility Evaluation Tool.
+
+El resultado general refleja una accesibilidad moderada, con margen de mejora en aspectos visuales y estructurales.
+
+| Métrica | Resultado | Interpretación |
+| ----- | ----- | ----- |
+| Errores | 9 | Elementos que incumplen directamente las pautas WCAG 2.2 (atributos ALT ausentes, etiquetas incorrectas, etc.). |
+| Errores de contraste | 2 | Problemas de visibilidad entre texto y fondo, especialmente en botones o títulos sobre imágenes. |
+| Alertas | 6 | Aspectos que podrían generar confusión o dificultar la navegación (uso excesivo de ARIA, estructura no semántica). |
+| Características detectadas | 77 | Elementos correctamente implementados (roles, etiquetas, landmarks). |
+| Estructura | 25 | Se detecta una jerarquía básica, aunque con encabezados desordenados. |
+| Elementos ARIA | 222 | Uso elevado de atributos ARIA, algunos redundantes o innecesarios. |
+| AIM Score | 7.4 / 10 | Nivel de accesibilidad aceptable, pero no óptimo para cumplir WCAG 2.2 AA. |
