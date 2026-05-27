@@ -131,23 +131,17 @@ Esto debería cargarse solo cuando el usuario haga clic en “Visita virtual”.
 
 3. Mejora social (Accesibilidad)
 
-
 En el HTML hay varios problemas:
 
+- Encabezados desordenados (hay un h2 antes del h1).
 
-Encabezados desordenados (hay un h2 antes del h1).
+- Iconos SVG sin aria-hidden.
 
+- Atributos alt vacíos o rotos.
 
-Iconos SVG sin aria-hidden.
+- Botones del menú móvil con aria-expanded que no coincide con el estado real.
 
-
-Atributos alt vacíos o rotos.
-
-
-Botones del menú móvil con aria-expanded que no coincide con el estado real.
-
-
-Ejemplo de icono sin accesibilidad:
+- Ejemplo de icono sin accesibilidad:
 
 
 html
@@ -178,11 +172,11 @@ Lo correcto sería que el título principal fuese el h1.
 4. Mejora de gobernanza (Ética y privacidad)
 Aunque en el fragmento no aparece el banner de cookies, sí se ve que:
 
-Los formularios piden teléfono incluso para cosas simples.
+-Los formularios piden teléfono incluso para cosas simples.
 
-Los enlaces legales no están muy visibles.
+- Los enlaces legales no están muy visibles.
 
-Propuesta para el banner de cookies:
+- Propuesta para el banner de cookies:
 
 html
 ```
@@ -200,6 +194,6 @@ Si la web se optimiza y carga más rápido, puede aumentar el tráfico. Para evi
 
 - Servir imágenes desde un CDN.
 
--Evitar añadir módulos UIkit innecesarios.
+- Evitar añadir módulos UIkit innecesarios.
 
--Mantener la web ligera y sin scripts pesados.
+- Mantener la web ligera y sin scripts pesados.
