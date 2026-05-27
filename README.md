@@ -86,9 +86,11 @@ En el código hay imágenes con atributos rotos, por ejemplo:
 
 
 html
+
 //<img class="el-image"
 src="/media/yootheme/cache/43/logo.png"
 alt=" loading="lazy" width="60" height="30">
+
 Ese alt=" loading="lazy" está mal escrito y rompe tanto el alt como el lazy loading.
 
 
@@ -96,7 +98,7 @@ Corrección:
 
 
 html
-//<img class="el-image"
+//</img class="el-image"
 src="/media/yootheme/cache/43/logo.webp"
 loading="lazy"
 alt="Logotipo Andalucía se mueve con Europa"
