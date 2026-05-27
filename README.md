@@ -38,7 +38,7 @@ Sí. La web presenta inflación de software porque:
 
 ## Fase 2: Dimensión Social y Equidad (S)
 
-1.**Test de Accesibilidad.**
+1. **Test de Accesibilidad.**
 
 Se ha realizado un análisis de accesibilidad sobre la página [https://www.arengalia.es/tabernas/taberna-porvenir](https://www.arengalia.es/tabernas/taberna-porvenir) utilizando la herramienta WAVE Web Accessibility Evaluation Tool.
 
@@ -62,10 +62,15 @@ El análisis realizado con WAVE revela varias barreras que afectan a la accesibi
 
 ## Fase 3: Dimensión de Gobernanza y Ética (G)
 
-1. **Transparencia**
+En esta fase analizo cómo la web trata la información del usuario y si es transparente a la hora de pedir consentimiento o datos personales. Aunque la página funciona correctamente, hay algunos aspectos que podrían mejorarse para que el usuario tenga más control y claridad sobre lo que acepta.
+
+1. Transparencia
+
+El banner de cookies no es demasiado claro. El botón de aceptar está muy destacado, mientras que la opción de rechazar o configurar está más escondida. Esto hace que el usuario tienda a aceptar sin pensar, lo que puede considerarse un pequeño patrón oscuro. Sería mejor que ambas opciones estuvieran igual de visibles para que el usuario pueda decidir de forma más transparente.
+
+2. Datos innecesarios
+
+El formulario pide nombre, correo y teléfono incluso para una consulta sencilla. No queda claro si todos esos datos son realmente necesarios ni para qué se van a usar exactamente. Además, la política de privacidad no está muy visible, lo que dificulta que el usuario pueda revisar cómo se gestionan sus datos antes de enviarlos. Reducir los datos solicitados y hacer más accesible la información legal mejoraría la experiencia y la confianza del usuario.
 
 
-
-2. **Datos innecesarios**
-
-
+#
