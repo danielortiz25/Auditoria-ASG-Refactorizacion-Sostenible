@@ -197,3 +197,109 @@ Si la web se optimiza y carga más rápido, puede aumentar el tráfico. Para evi
 - Evitar añadir módulos UIkit innecesarios.
 
 - Mantener la web ligera y sin scripts pesados.
+
+## CODIGO ANTES
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Taberna del Porvenir</title>
+
+    <!-- Script sin defer: bloquea la carga de la página -->
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+
+<header>
+
+    <!-- Atributo alt roto y lazy loading mal escrito -->
+    <img src="/media/yootheme/cache/43/logo.png" alt=" loading="lazy" width="60" height="30">
+
+    <!-- Orden incorrecto de encabezados: h2 antes que h1 -->
+    <h2>Taberna del Porvenir</h2>
+    <h1>Cardenal Bueno Monreal, 20</h1>
+</header>
+
+<main>
+
+    <!-- Imagen sin alt y sin lazy loading -->
+    <img src="/images/thumb-porvenir.png">
+
+    <!-- Iframe cargado siempre, aunque el usuario no lo abra -->
+    <iframe src="https://my.matterport.com/show/?m=RvJUeutmoxa&play=1"></iframe>
+
+    <p>Nuestra primera Taberna...</p>
+</main>
+
+<footer>
+    <!-- Enlace legal poco visible -->
+    <a href="/politica-privacidad">Privacidad</a>
+</footer>
+
+</body>
+</html>
+```
+## CODIGO REFACTORIZADO
+
+```
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Taberna del Porvenir</title>
+
+    <!-- Script optimizado: ahora no bloquea la carga -->
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <!-- Imagen optimizada: formato WebP, alt correcto y lazy loading bien aplicado -->
+    <img src="/media/yootheme/cache/43/logo.webp"
+         loading="lazy"
+         alt="Logotipo Tabernas Arengalia"
+         width="60" height="30">
+
+    <!-- Encabezados corregidos: primero h1, luego h2 -->
+    <h1>Taberna del Porvenir</h1>
+    <h2>Cardenal Bueno Monreal, 20</h2>
+</header>
+
+<main>
+
+    <!-- Imagen optimizada: WebP, lazy loading y alt descriptivo -->
+    <img src="/images/thumb-porvenir.webp"
+         loading="lazy"
+         alt="Vista previa de la taberna">
+
+    <!-- Botón para cargar el iframe solo cuando el usuario lo solicite -->
+    <button id="abrir-visita">Abrir visita virtual</button>
+
+    <!-- Contenedor vacío donde se insertará el iframe -->
+    <div id="contenedor-visita"></div>
+
+    <script>
+        /* El iframe solo se carga cuando el usuario hace clic.
+           Esto reduce el consumo de datos y mejora el rendimiento. */
+        document.getElementById("abrir-visita").onclick = () => {
+            document.getElementById("contenedor-visita").innerHTML =
+            `<iframe loading="lazy"
+                     src="https://my.matterport.com/show/?m=RvJUeutmoxa"
+                     frameborder="0"
+                     allowfullscreen></iframe>`;
+        };
+    </script>
+
+    <p>Nuestra primera Taberna, fundada con mucha ilusión...</p>
+</main>
+
+<footer>
+    <!-- Enlace legal más claro y accesible -->
+    <a href="/politica-privacidad">Política de privacidad</a>
+</footer>
+
+</body>
+</html>
+```
