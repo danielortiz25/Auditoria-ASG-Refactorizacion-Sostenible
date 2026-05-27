@@ -172,7 +172,7 @@ Lo correcto sería que el título principal fuese el h1.
 4. Mejora de gobernanza (Ética y privacidad)
 Aunque en el fragmento no aparece el banner de cookies, sí se ve que:
 
--Los formularios piden teléfono incluso para cosas simples.
+- Los formularios piden teléfono incluso para cosas simples.
 
 - Los enlaces legales no están muy visibles.
 
