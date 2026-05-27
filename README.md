@@ -73,4 +73,146 @@ El banner de cookies no es demasiado claro. El botón de aceptar está muy desta
 El formulario pide nombre, correo y teléfono incluso para una consulta sencilla. No queda claro si todos esos datos son realmente necesarios ni para qué se van a usar exactamente. Además, la política de privacidad no está muy visible, lo que dificulta que el usuario pueda revisar cómo se gestionan sus datos antes de enviarlos. Reducir los datos solicitados y hacer más accesible la información legal mejoraría la experiencia y la confianza del usuario.
 
 
-#
+## Fase 4: Propuesta de Refactorización (Green Coding)
+
+
+Después de revisar el código de la página de la Taberna del Porvenir, he encontrado varias mejoras que pueden aplicarse para que la web sea más ligera, accesible y sostenible. La página usa UIkit y carga muchas imágenes, módulos y scripts que pueden optimizarse sin cambiar el diseño.
+
+
+1. Optimización de activos
+
+
+En el código hay imágenes con atributos rotos, por ejemplo:
+
+
+html
+<img class="el-image"
+src="/media/yootheme/cache/43/logo.png"
+alt=" loading="lazy" width="60" height="30">
+Ese alt=" loading="lazy" está mal escrito y rompe tanto el alt como el lazy loading.
+
+
+Corrección:
+
+
+html
+<img class="el-image"
+src="/media/yootheme/cache/43/logo.webp"
+loading="lazy"
+alt="Logotipo Andalucía se mueve con Europa"
+width="60" height="30">
+
+
+Además, algunas imágenes cargan versiones muy grandes aunque se muestran pequeñas. Aquí se puede reducir el tamaño o eliminar PNG si ya existe WebP o AVIF.
+
+
+2. Reducción de peticiones
+
+
+El HTML carga muchos scripts sin defer, lo que bloquea la carga inicial.
+
+
+Ejemplo actual:
+
+
+html
+<script src="/js/main.js"></script>
+
+
+Mejora:
+
+
+html
+<script src="/js/main.js" defer></script>
+
+
+También se carga el iframe de la visita virtual aunque el usuario no lo haya abierto:
+
+
+html
+<iframe src="https://my.matterport.com/show/?m=RvJUeutmoxa&play=1"></iframe>
+
+
+Esto debería cargarse solo cuando el usuario haga clic en “Visita virtual”.
+
+
+3. Mejora social (Accesibilidad)
+
+
+En el HTML hay varios problemas:
+
+
+Encabezados desordenados (hay un h2 antes del h1).
+
+
+Iconos SVG sin aria-hidden.
+
+
+Atributos alt vacíos o rotos.
+
+
+Botones del menú móvil con aria-expanded que no coincide con el estado real.
+
+
+Ejemplo de icono sin accesibilidad:
+
+
+html
+<svg width="20" height="20">...</svg>
+
+
+Mejora:
+
+
+html
+<svg width="20" height="20" aria-hidden="true">...</svg>
+
+
+Ejemplo de encabezado mal ordenado:
+
+
+html
+<h2>Taberna del Porvenir</h2>
+<h1>Cardenal Bueno Monreal, 20</h1>
+
+
+Lo correcto sería que el título principal fuese el h1.
+
+
+4. Mejora de gobernanza (Ética y privacidad)
+Aunque en el fragmento no aparece el banner de cookies, sí se ve que:
+
+
+Los formularios piden teléfono incluso para cosas simples.
+
+
+Los enlaces legales no están muy visibles.
+
+
+Propuesta para el banner de cookies:
+
+
+html
+<button class="btn-cookies aceptar">Aceptar</button>
+<button class="btn-cookies rechazar">Rechazar</button>
+
+
+Esto evita patrones oscuros y mejora la transparencia.
+
+
+5. Reflexión sobre la Paradoja de Jevons
+
+
+Si la web se optimiza y carga más rápido, puede aumentar el tráfico. Para evitar que eso aumente el consumo total:
+
+
+Activar caché del navegador.
+
+
+Servir imágenes desde un CDN.
+
+
+Evitar añadir módulos UIkit innecesarios.
+
+
+Mantener la web ligera y sin scripts pesados.
