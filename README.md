@@ -86,7 +86,7 @@ En el código hay imágenes con atributos rotos, por ejemplo:
 
 
 html
-<img class="el-image"
+//<img class="el-image"
 src="/media/yootheme/cache/43/logo.png"
 alt=" loading="lazy" width="60" height="30">
 Ese alt=" loading="lazy" está mal escrito y rompe tanto el alt como el lazy loading.
@@ -96,7 +96,7 @@ Corrección:
 
 
 html
-<img class="el-image"
+//<img class="el-image"
 src="/media/yootheme/cache/43/logo.webp"
 loading="lazy"
 alt="Logotipo Andalucía se mueve con Europa"
@@ -116,21 +116,21 @@ Ejemplo actual:
 
 
 html
-<script src="/js/main.js"></script>
+//<script src="/js/main.js"></script>
 
 
 Mejora:
 
 
 html
-<script src="/js/main.js" defer></script>
+//<script src="/js/main.js" defer></script>
 
 
 También se carga el iframe de la visita virtual aunque el usuario no lo haya abierto:
 
 
 html
-<iframe src="https://my.matterport.com/show/?m=RvJUeutmoxa&play=1"></iframe>
+//<iframe src="https://my.matterport.com/show/?m=RvJUeutmoxa&play=1"></iframe>
 
 
 Esto debería cargarse solo cuando el usuario haga clic en “Visita virtual”.
@@ -158,14 +158,14 @@ Ejemplo de icono sin accesibilidad:
 
 
 html
-<svg width="20" height="20">...</svg>
+//<svg width="20" height="20">...</svg>
 
 
 Mejora:
 
 
 html
-<svg width="20" height="20" aria-hidden="true">...</svg>
+//<svg width="20" height="20" aria-hidden="true">...</svg>
 
 
 Ejemplo de encabezado mal ordenado:
@@ -193,8 +193,9 @@ Propuesta para el banner de cookies:
 
 
 html
-<button class="btn-cookies aceptar">Aceptar</button>
-<button class="btn-cookies rechazar">Rechazar</button>
+
+//<button class="btn-cookies aceptar">Aceptar</button>
+//<button class="btn-cookies rechazar">Rechazar</button>
 
 
 Esto evita patrones oscuros y mejora la transparencia.
